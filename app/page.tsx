@@ -1,10 +1,23 @@
-import React, { PropsWithChildren } from 'react'
-import styles from '../styles/Home.module.css'
+import { Avatar } from '../components/Avatar'
+import { get } from '@vercel/edge-config'
+import { SocialMediaRow } from '../components/SocialMediaRow'
 
-export default function HomePage() {
+export const dynamic = 'force-dynamic',
+  runtime = 'edge'
+
+export default async function HomePage() {
+  const [socials, sections] = await Promise.all([
+    get('socials'),
+    get('sections'),
+  ])
+
   return (
-    <>
-      <h1>Hello world!</h1>
-    </>
+    <div className='prose lg:prose-xl'>
+      <div className='flex flex-col items-center justify-center gap-4'>
+        <Avatar />
+        <h1>Adrián Coll Links</h1>
+        <SocialMediaRow links={socials}  />
+      </div>
+    </div>
   )
 }

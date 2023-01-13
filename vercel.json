@@ -1,0 +1,3 @@
+{
+  "rewrite": [{ "source": "/rewrited", "destination": "www.youtube.com" }]
+}
