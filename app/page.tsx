@@ -2,8 +2,8 @@ import { Avatar } from '../components/Avatar'
 import { get } from '@vercel/edge-config'
 import { SocialMediaRow } from '../components/SocialMediaRow'
 
-export const dynamic = 'force-dynamic',
-  runtime = 'edge'
+// export const dynamic = 'force-dynamic',
+//   runtime = 'edge'
 
 export default async function HomePage() {
   const [socials, sections] = await Promise.all([
