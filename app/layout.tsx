@@ -1,7 +1,5 @@
 import React from 'react'
 
-export const layout = () => {
-  return (
-    <div>layout</div>
-  )
+export default function RootLayout({ children }) {
+  return <div>{children}</div>
 }

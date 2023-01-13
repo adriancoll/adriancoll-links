@@ -2,13 +2,13 @@
   "rewrites": [
     {
       "source": "/links/",
-      "destination": "https://adriancoll-links.vercel.com/"
+      "destination": "https://www.adriancoll.dev/"
     }
   ],
   "redirects": [
     {
       "source": "/links/",
-      "destination": "https://adriancoll-links.vercel.com/"
+      "destination": "https://www.adriancoll.dev/"
     }
   ]
 }
