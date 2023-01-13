@@ -1,5 +1,14 @@
 {
   "rewrites": [
-    { "source": "/links/", "destination": "https://adriancoll-links.vercel.com/" }
+    {
+      "source": "/links/",
+      "destination": "https://adriancoll-links.vercel.com/"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/links/",
+      "destination": "https://adriancoll-links.vercel.com/"
+    }
   ]
 }
