@@ -5,10 +5,12 @@
       "destination": "https://www.adriancoll.dev/"
     }
   ],
-  "redirects": [
-    {
-      "source": "/links/",
-      "destination": "https://www.adriancoll.dev/"
+  "routes": {
+    "/links": {
+      "status": 301,
+      "headers": {
+        "Location": "https://www.adriancoll.dev/"
+      }
     }
-  ]
+  }
 }
