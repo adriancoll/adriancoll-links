@@ -5,5 +5,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <div className='bg-red-50'>{children}</div>
+  return <div className='bg-red-'>{children}</div>
 }
