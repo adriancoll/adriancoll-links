@@ -1,16 +1,17 @@
 import { FC } from 'react'
+import { SocialMediaIcon } from './SocialMediaIcon'
 
-export type SocialLink = { href: string }
+export type TSocialLink = { href: string }
 
 interface Props {
-  links: SocialLink[]
+  links: TSocialLink[]
 }
 
 export const SocialMediaRow: FC<Props> = ({ links }) => {
   return (
     <div className={`flex items-center justify-center gap-2`}>
       {links.map(({ href }) => (
-        <div key={href}>{href}</div>
+        <SocialMediaIcon key={href} href={href} />
       ))}
     </div>
   )

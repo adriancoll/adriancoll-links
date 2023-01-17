@@ -3,4 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+    .blob {
+        @apply fixed -z-0 h-96 w-96 rounded-full blur-3xl opacity-25;
+    }
 }
