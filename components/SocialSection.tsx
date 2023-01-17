@@ -13,15 +13,15 @@ export interface Link {
 }
 
 interface Props {
-  title: string
+  title?: string
   links: Link[]
 }
 
 export const SocialSection: FC<Props> = ({ title, links }) => {
   return (
-    <div className='pb-4 w-full'>
-      <h3 className='text-white font-bold text-2xl'>{title}</h3>
-      <div className='flex w-full flex-col gap-4 mt-6'>
+    <div className='w-full pb-4'>
+      {title && <h3 className='text-2xl font-bold text-white'>{title}</h3>}
+      <div className='mt-6 flex w-full flex-col gap-4'>
         {links.map((link) => (
           <LinkBox key={link.href} link={link} />
         ))}

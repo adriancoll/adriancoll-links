@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { SocialMediaIcon } from './SocialMediaIcon'
 
-export type TSocialLink = { href: string }
+export type TSocialLink = { href: string; label: 'github' | 'linkedin' | '' }
 
 interface Props {
   links: TSocialLink[]
@@ -9,9 +9,9 @@ interface Props {
 
 export const SocialMediaRow: FC<Props> = ({ links }) => {
   return (
-    <div className={`flex items-center justify-center gap-2`}>
-      {links.map(({ href }) => (
-        <SocialMediaIcon key={href} href={href} />
+    <div className={`flex text-white items-center justify-center gap-2`}>
+      {links.map((link) => (
+        <SocialMediaIcon key={link.href} {...link} />
       ))}
     </div>
   )

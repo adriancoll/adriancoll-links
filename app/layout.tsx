@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='es'>
-      <body className='container antialiased transition duration-150 prose h-screen bg-slate-500 pt-10 dark:bg-slate-800 lg:prose-lg'>
+      <body className='container h-screen bg-slate-500 pt-10  antialiased transition duration-150 dark:bg-slate-800 '>
         <DarkModeToggle />
         {children}
       </body>

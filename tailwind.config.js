@@ -8,28 +8,6 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      typography: (theme) => ({
-        DEFAULT: {
-          // this is for prose class
-
-          css: {
-            color: '#fff', // change global color scheme
-            a: {
-              // change anchor color and on hover
-              color: theme('colors.primary'),
-              fontWeight: theme('font.extrabold'),
-              'text-decoration': 'none',
-              '&:hover': {
-                // could be any. It's like extending css selector
-                color: theme('colors.secondary'),
-              },
-            },
-            h3: {
-              'margin-top': '0 !important',
-            },
-          },
-        },
-      }),
       colors: {
         primary: '#CB60E2',
         secondary: '#7C162E',
@@ -63,5 +41,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: []
 }
