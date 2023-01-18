@@ -21,7 +21,7 @@ export const SocialMediaIcon: FC<Props> = ({
     <Link
       href={href}
       target={target}
-      className=' text-3xl text-slate-300 transition hover:rotate-3 hover:scale-125 hover:text-tertiary'>
+      className='text-3xl text-slate-300 transition hover:rotate-3 hover:scale-125 hover:text-tertiary focus:rotate-3 focus:scale-125 focus:text-tertiary focus:outline-none'>
       {label === 'github' && <AiFillGithub />}
       {label === 'linkedin' && <FaLinkedinIn />}
       {label === 'instagram' && <AiFillInstagram />}

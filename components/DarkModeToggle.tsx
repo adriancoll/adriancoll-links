@@ -38,7 +38,7 @@ export const DarkModeToggle = () => {
 
   return (
     <div
-      className='absolute top-20 right-40 cursor-pointer'
+      className='absolute z-50 top-15 right-4 md:right-15 lg:top-20 lg:right-40 cursor-pointer'
       onClick={toggleDarkMode}>
       <svg
         className='duration relative pointer-events-none transition'
