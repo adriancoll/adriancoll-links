@@ -9,7 +9,7 @@ interface Props {
 
 export const SocialMediaRow: FC<Props> = ({ links }) => {
   return (
-    <div className={`flex text-white items-center justify-center gap-2`}>
+    <div className={`my-4 flex items-center justify-center gap-2 text-white`}>
       {links.map((link) => (
         <SocialMediaIcon key={link.href} {...link} />
       ))}

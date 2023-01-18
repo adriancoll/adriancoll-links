@@ -2,7 +2,8 @@ import Link from 'next/link'
 import { FC, HTMLAttributeAnchorTarget } from 'react'
 import Image from 'next/image'
 
-import { AiFillGithub, AiFillLinkedin, AiFillInstagram, AiFillTwitterSquare } from 'react-icons/ai'
+import { AiFillGithub, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
+import { FaLinkedinIn } from 'react-icons/fa'
 import { SiFiverr } from 'react-icons/si'
 
 interface Props {
@@ -20,12 +21,11 @@ export const SocialMediaIcon: FC<Props> = ({
     <Link
       href={href}
       target={target}
-      className='duration hover:color-primary hover: bg-gradient-to-tr from-tertiary to-primary bg-clip-text text-3xl text-slate-700 transition hover:scale-105 hover:text-transparent'>
+      className=' text-3xl text-slate-300 transition hover:rotate-3 hover:scale-125 hover:text-tertiary'>
       {label === 'github' && <AiFillGithub />}
-      {label === 'fiverr' && <SiFiverr />}
-      {label === 'linkedin' && <AiFillLinkedin />}
+      {label === 'linkedin' && <FaLinkedinIn />}
       {label === 'instagram' && <AiFillInstagram />}
-      {label === 'twitter' && <AiFillTwitterSquare />}
+      {label === 'twitter' && <AiOutlineTwitter />}
     </Link>
   )
 }
