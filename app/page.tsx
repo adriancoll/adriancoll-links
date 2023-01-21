@@ -1,8 +1,10 @@
 import { Avatar } from '../components/Avatar'
 import { get } from '@vercel/edge-config'
+
+import { ISocialSection } from '../interfaces/social'
+
 import {
   SocialSection,
-  ISocialSection,
   TSocialLink,
   GradientBox,
   SocialMediaRow,
