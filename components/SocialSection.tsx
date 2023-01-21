@@ -1,16 +1,8 @@
 import { FC } from 'react'
+import { Link } from '../interfaces/social'
 import { LinkBox } from './LinkBox'
 
-export interface ISocialSection {
-  title: string
-  links: Link[]
-}
 
-export interface Link {
-  label: string
-  href: string
-  highlighted: boolean
-}
 
 interface Props {
   title?: string

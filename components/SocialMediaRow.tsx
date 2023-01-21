@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { SocialMediaIcon } from './SocialMediaIcon'
 
-export type TSocialLink = { href: string; label: 'github' | 'linkedin' | '' }
+export type TSocialLink = { href: string; label: 'github' | 'linkedin' }
 
 interface Props {
   links: TSocialLink[]
