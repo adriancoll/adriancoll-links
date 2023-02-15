@@ -9,4 +9,5 @@ export interface Link {
   label: string
   href: string
   icon: TSocials
+  disabled?: boolean
 }
